@@ -10,8 +10,7 @@ RUN install2.r --error --skipinstalled --ncpus -1 \
     tidymodels
     
 ### Bioconductor Packages ###     
-RUN R -e "BiocManager::install('ensembldb')"
-RUN R -e 'BiocManager::install("liftOver")'
+RUN R -e 'BiocManager::install("rtracklayer")'
 
 RUN rm -rf /tmp/downloaded_packages
   
