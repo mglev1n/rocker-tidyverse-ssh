@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
 ### R Packages ###  
 RUN install2.r --error --skipinstalled --ncpus -1 \
     here \
-    tidymodels \
+    tidymodels
     
 ### Bioconductor Packages ###     
 RUN R -e "BiocManager::install('ensembldb')"
